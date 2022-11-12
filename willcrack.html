@@ -8,6 +8,26 @@
 
 <label for="cipher">Input your cipher here:</label>
 <input type="text" id="cipher" name="cipher" placeholder="stuff">
+<button onclick="convert()">Convert!</button>
+<p id="convert"></p>
+
+<script>
+function convert() {
+    var cipher = document.getElementById("cipher");
+    document.getElementById("convert").innerHTML = cipher.value;
+}
+
+</script>
+
+<!-- function conversorMonedas() {
+  var cipher = document.getElementById("cipher").value;
+  var resultado = document.getElementById("resultado");
+  var result = "";
+  for (var i = 0; i < cipher.length; i++) {
+    result += String.fromCharCode(cipher.charCodeAt(i) + 1);
+  }
+  resultado.innerHTML = result;
+} -->
 
 </body>
 </html>
