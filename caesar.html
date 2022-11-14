@@ -2,7 +2,7 @@
 <label for="cipher">Input your cipher here:</label>
 <input type="text" id="cipher" name="cipher" placeholder="stuff">
 <button onclick="caesarCipher()">Convert!</button>
-<p id="test"></p>
+<p id="caesarCipher"></p>
 
 <style>
     body{
@@ -21,23 +21,23 @@
 <p id="caesarCipher"></p>
 
 <script>
-    function caesarCipher() {
-        var cipher = document.getElementById("cipher");
-        // document.getElementById("caesarCipher").innerHTML = cipher.value;
-        var decoded = "";
-        for (var i = 0; i < cipher.length; i++) {
-            var c = cipher[i].charCodeAt();
-            if (c >= 65 && c <= 90) {
-                decoded += String.fromCharCode((c - 65 + 13) % 26 + 65);
-            } else if (c >= 97 && c <= 122) {
-                decoded += String.fromCharCode((c - 97 + 13) % 26 + 97);
-            } else {
-                decoded += cipher.charAt(i);
-            }
-        }
-        decoded.value = test
-        document.getElementById("caesarCipher").innerHTML = test.value;
-    }
+    // function caesarCipher() {
+    //     var cipher = document.getElementById("cipher");
+    //     // document.getElementById("caesarCipher").innerHTML = cipher.value;
+    //     var decoded = "";
+    //     for (var i = 0; i < cipher.length; i++) {
+    //         var c = cipher[i].charCodeAt();
+    //         if (c >= 65 && c <= 90) {
+    //             decoded += String.fromCharCode((c - 65 + 13) % 26 + 65);
+    //         } else if (c >= 97 && c <= 122) {
+    //             decoded += String.fromCharCode((c - 97 + 13) % 26 + 97);
+    //         } else {
+    //             decoded += cipher.charAt(i);
+    //         }
+    //     }
+    //     document.getElementById("caesarCipher").innerHTML = decoded;
+    // }
+
     
     </script>
 </body>

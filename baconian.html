@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=en manifest=eff.appcache>
+<meta charset=utf-8>
+<title>Baconian cipher</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<h1>Baconian cipher</h1>
+<h2>Plaintext:</h2>
+<textarea autofocus>I shot the sheriff</textarea>
+<h2>Ciphertext: </h2>
+<textarea>ABAAA BAAABAABBBABBABBAABA BAABAAABBBAABAA BAAABAABBBAABAABAAAAABAAAAABABAABAB</textarea>
+<div><label><input name=alphabet type=radio checked> use the common 24-letter cipher alphabet <code>ABCDEFGHIKLMNOPQRSTUWXYZ</code></label></div>
+<div><label><input name=alphabet type=radio> use the full alphabet of 26 letters <code>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code></label></div>
+<script>/*! http://mths.be/bacon v0.1.0 by @mathias | MIT license 
+Cred to this guy*/
+
+(function(h){
+    var g=typeof exports=="object"&&exports;
+    var d=typeof module=="object"&&module&&module.exports==g&&module;
+    var c=typeof global=="object"&&global;
+    if(c.global===c||c.window===c){h=c}
+    var b="ABCDEFGHIKLMNOPQRSTUWXYZ";
+    var a=function(o,r){o=o.toUpperCase();
+        var m=r&&r.alphabet!=null?r.alphabet.toUpperCase():b;
+    var q=-1;
+    var l=o.length;
+    var j="";
+    var s="";var p=[];var n;var k;while(++q<l){n=o.charAt(q);if(n=="A"||n=="B"){p.push(n)}else{j=" "}if(p.length==5){k=((p[0]=="A"?0:16)+(p[1]=="A"?0:8)+(p[2]=="A"?0:4)+(p[3]=="A"?0:2)+(p[4]=="A"?0:1));p=[];s+=(s.length?j:"")+m.charAt(k);j=""}}return s};var f=function(m,l){m=m.toUpperCase();var q;if(l&&l.alphabet!=null){q=l.alphabet.toUpperCase()}else{q=b;m=m.replace(/J/g,"I").replace(/V/g,"U")}var k=-1;var o=m.length;var n;var p="";var j="";while(++k<o){n=q.indexOf(m.charAt(k));if(n>-1){j+=p+((n&16?"B":"A")+(n&8?"B":"A")+(n&4?"B":"A")+(n&2?"B":"A")+(n&1?"B":"A"));p=""}else{if(k){p=" "}}}return j};var e={encode:f,decode:a,version:"0.1.0"};if(typeof define=="function"&&typeof define.amd=="object"&&define.amd){define(function(){return e})}else{if(g&&!g.nodeType){if(d){d.exports=e}else{for(var i in e){e.hasOwnProperty(i)&&(g[i]=e[i])}}}else{h.bacon=e}}}(this));(function(g,i){var j=i.getElementsByTagName("textarea");var k=j[0];var c=j[1];var h=i.getElementsByTagName("input");var b=h[0];var a=h[1];var l=i.getElementById("permalink");var f=(function(){var o=new Date;var p;var m;try{(p=g.localStorage).setItem(o,o);m=p.getItem(o)==o;p.removeItem(o);return m&&p}catch(n){}}());function e(m){return encodeURIComponent(m).replace(/['()_*]/g,function(n){return"%"+n.charCodeAt().toString(16)})}function d(){var m=this==c;var o;var n=b.checked?null:{alphabet:"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};if(m){o=bacon.decode(c.value,n);k.value=o}else{o=bacon.encode(k.value,n);c.value=o}o=k.value;l.hash=e(o);f&&(f.bacon=o)}k.onkeyup=c.onkeyup=b.onchange=a.onchange=d;k.oninput=c.oninput=b.onchange=a.onchange=function(){k.onkeyup=c.onkeyup=null;d.call(this)};if(f){f.bacon&&(k.value=f.bacon);d()}g.onhashchange=function(){k.value=decodeURIComponent(location.hash.slice(1));d()};if(location.hash){g.onhashchange()}}(this,document));window._gaq=[["_setAccount","UA-6065217-60"],["_trackPageview"]];(function(e,a){var c=e.createElement(a),b=e.getElementsByTagName(a)[0];c.src="//www.google-analytics.com/ga.js";b.parentNode.insertBefore(c,b)}(document,"script"))</script>
