@@ -41,10 +41,13 @@ public class willcrack {
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);  
         System.out.println("Enter cipher");
+        System.out.print("Cipher: ");
         String cipher = myObj.nextLine();  
+        // System.out.println("Cipher: " + cipher);
 
-
+        System.out.print("Decoded message :");
         willcrack decode = new willcrack(cipher); 
+ 
         // test: Kfzb gly!
 
     }
