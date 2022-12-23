@@ -1,5 +1,6 @@
 package willcrack;
 import java.util.Scanner; 
+import java.lang.Math;
 
 public class willcrack {
 
@@ -25,13 +26,17 @@ public class willcrack {
             }
 
             for (int j = 0; j < letters.length; j++) {
+
+      
                 if (letterIndividual.equals(letters[j])) {
-                    System.out.print(letters[(j+3)%26]); 
+                    System.out.print(letters[Math.abs((j+3)%26)]); 
                 }
 
                 if (letterIndividual.equals(capitalLetters[j])) {
-                    System.out.print(capitalLetters[(j+3)%26]); 
+                    System.out.print(capitalLetters[Math.abs((j+3)%26)]); 
                 }
+
+                
                 
                 
             }
@@ -42,8 +47,8 @@ public class willcrack {
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);  
         System.out.println("Enter cipher");
+        String cipher = myObj.nextLine();  
 
-        String cipher = myObj.nextLine();  // Read user input
 
         willcrack decode = new willcrack(cipher); 
         // test: Kfzb gly!
