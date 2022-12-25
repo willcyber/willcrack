@@ -2,7 +2,7 @@ package willcrack;
 import java.util.Scanner; 
 import java.lang.Math;
 
-public class affine {
+public class caesar {
 
     String[] letters = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
     String[] capitalLetters = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
@@ -13,7 +13,7 @@ public class affine {
     String letterIndividual = "";
 
 
-    public affine(String msg) {
+    public caesar(String msg) {
         for (int i = 0; i < msg.length(); i++) {
             letterIndividual = msg.substring(i, i+1);
 
@@ -46,7 +46,7 @@ public class affine {
         // System.out.println("Cipher: " + cipher);
 
         System.out.print("Decoded message: ");
-        affine decode = new affine(cipher); 
+        caesar decode = new caesar(cipher); 
  
         // test: Kfzb gly!
 
