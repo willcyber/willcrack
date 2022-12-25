@@ -5,10 +5,10 @@ Beta
 In Javascript and Java
 
 Caesar (done)
-Affine (in progress)
+Affine (done)
 Vigenere (eh)
 Atbash (done)
-Baconian
+Baconian (in progress)
 Hill
 Porta
 Morse
