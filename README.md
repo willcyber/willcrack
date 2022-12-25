@@ -4,11 +4,18 @@ Beta
 
 In Javascript and Java
 
-Caesar (done)
+Caesar (done, add encryption functionality)
+
 Affine (done)
-Vigenere (eh)
+
+Vigenere (only works if key same length, needa fix)
+
 Atbash (done)
-Baconian (in progress)
+
+Baconian (mostly done, needa fix spaces and incorporate 24 char)
+
 Hill
+
 Porta
-Morse
+
+Morse (in progress)

@@ -41,6 +41,7 @@ public static void main(String[] args) {
     System.out.print("Cipher: ");
     String cipher = myObj.nextLine();  
     // System.out.println("Cipher: " + cipher);
+    // can't add spaces rn
 
     System.out.print("Decoded message: ");
     baconian decode = new baconian(cipher); 
