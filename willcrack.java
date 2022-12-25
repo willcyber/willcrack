@@ -45,7 +45,7 @@ public class willcrack {
         String cipher = myObj.nextLine();  
         // System.out.println("Cipher: " + cipher);
 
-        System.out.print("Decoded message :");
+        System.out.print("Decoded message: ");
         willcrack decode = new willcrack(cipher); 
  
         // test: Kfzb gly!
