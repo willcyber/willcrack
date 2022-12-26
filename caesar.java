@@ -13,40 +13,75 @@ public class caesar {
     String letterIndividual = "";
 
 
-    public caesar(String msg) {
-        for (int i = 0; i < msg.length(); i++) {
-            letterIndividual = msg.substring(i, i+1);
+    public caesar(String msg, String eord) {
 
-            for (int j = 0; j < letters.length; j++) {
-
-      
-                if (letterIndividual.equals(letters[j])) {
-                    System.out.print(letters[Math.abs((j+3)%26)]); 
+        switch (eord) {
+            case "d":
+                for (int i = 0; i < msg.length(); i++) {
+                    letterIndividual = msg.substring(i, i+1);
+        
+                    for (int j = 0; j < letters.length; j++) {
+        
+            
+                        if (letterIndividual.equals(letters[j])) {
+                            System.out.print(letters[Math.abs((j-3+26)%26)]); 
+                        }
+        
+                        if (letterIndividual.equals(capitalLetters[j])) {
+                            System.out.print(capitalLetters[Math.abs((j-3+26)%26)]); 
+                        }
+        
+                        if (letterIndividual.equals(other[j])) {
+                            System.out.print(other[j]); 
+                        }
+        
+                        
+                    }
                 }
-
-                if (letterIndividual.equals(capitalLetters[j])) {
-                    System.out.print(capitalLetters[Math.abs((j+3)%26)]); 
+                break;
+            case "e":
+                for (int i = 0; i < msg.length(); i++) {
+                    letterIndividual = msg.substring(i, i+1);
+        
+                    for (int j = 0; j < letters.length; j++) {
+        
+            
+                        if (letterIndividual.equals(letters[j])) {
+                            System.out.print(letters[Math.abs((j+3)%26)]); 
+                        }
+        
+                        if (letterIndividual.equals(capitalLetters[j])) {
+                            System.out.print(capitalLetters[Math.abs((j+3)%26)]); 
+                        }
+        
+                        if (letterIndividual.equals(other[j])) {
+                            System.out.print(other[j]); 
+                        }
+        
+                        
+                    }
                 }
-
-                if (letterIndividual.equals(other[j])) {
-                    System.out.print(other[j]); 
-                }
-
-                
-            }
+                break;
         }
+
+        
         System.out.println(""); 
     }
 
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);  
-        System.out.println("Enter cipher");
-        System.out.print("Cipher: ");
+        System.out.println("Enter cipher/plaintext");
+        System.out.print("Original: ");
         String cipher = myObj.nextLine();  
         // System.out.println("Cipher: " + cipher);
 
-        System.out.print("Decoded message: ");
-        caesar decode = new caesar(cipher); 
+        Scanner myObj2 = new Scanner(System.in);  
+        System.out.println("Encryption (e) or Decryption (d)");
+        System.out.print("eord: ");
+        String eord = myObj2.nextLine();  
+
+        System.out.print("Decoded/Encoded message: ");
+        caesar decode = new caesar(cipher, eord); 
  
         // test: Kfzb gly!
 
