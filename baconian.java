@@ -13,7 +13,7 @@ public baconian(String msg) {
 
     for (int n=0; n<msg.length()/5; n++) {
         
-        firstFiveChars = msg.substring(0+6*n, 5+6*n);
+        firstFiveChars = msg.substring(0+5*n, 5+5*n);
         checkspace = msg.substring(5*n+5, 5*n+6);
         
         
@@ -22,12 +22,11 @@ public baconian(String msg) {
             // System.out.println(checkspace);
             if (checkspace == " ") {
                         System.out.print(" ");
-                        // z++;
                         // t = t++;
                     }
       
             if (firstFiveChars.equals(bacon[j])) {
-                System.out.print(letters[j]); 
+                System.out.print(letters[j]);
             }
 
             // if (letterIndividual.equals(capitalLetters[j])) {
