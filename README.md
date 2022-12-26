@@ -4,7 +4,7 @@
 ### In Javascript and Java
 
 Ciphers
-- Caesar (done, add encryption functionality)
+- Caesar (done)
 - Affine (done)
 - Vigenere (only works if key same length, needa fix)
 - Atbash (done)
