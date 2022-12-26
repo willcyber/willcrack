@@ -13,44 +13,77 @@ public class affine {
     String letterIndividual = "";
 
 
-    public affine(String msg, int shift) {
-        for (int i = 0; i < msg.length(); i++) {
-            letterIndividual = msg.substring(i, i+1);
-
-            for (int j = 0; j < letters.length; j++) {
-
-      
-                if (letterIndividual.equals(letters[j])) {
-                    System.out.print(letters[Math.abs((j+shift)%26)]); 
+    public affine(String msg, String eord, int shift) {
+        switch (eord) {
+            case "e":
+                for (int i = 0; i < msg.length(); i++) {
+                    letterIndividual = msg.substring(i, i+1);
+        
+                    for (int j = 0; j < letters.length; j++) {
+        
+            
+                        if (letterIndividual.equals(letters[j])) {
+                            System.out.print(letters[Math.abs((j-shift+26)%26)]); 
+                        }
+        
+                        if (letterIndividual.equals(capitalLetters[j])) {
+                            System.out.print(capitalLetters[Math.abs((j-shift+26)%26)]); 
+                        }
+        
+                        if (letterIndividual.equals(other[j])) {
+                            System.out.print(other[j]); 
+                        }
+        
+                        
+                    }
                 }
-
-                if (letterIndividual.equals(capitalLetters[j])) {
-                    System.out.print(capitalLetters[Math.abs((j+shift)%26)]); 
+                break;
+            case "d":
+                for (int i = 0; i < msg.length(); i++) {
+                    letterIndividual = msg.substring(i, i+1);
+        
+                    for (int j = 0; j < letters.length; j++) {
+        
+            
+                        if (letterIndividual.equals(letters[j])) {
+                            System.out.print(letters[Math.abs((j+shift)%26)]); 
+                        }
+        
+                        if (letterIndividual.equals(capitalLetters[j])) {
+                            System.out.print(capitalLetters[Math.abs((j+shift)%26)]); 
+                        }
+        
+                        if (letterIndividual.equals(other[j])) {
+                            System.out.print(other[j]); 
+                        }
+        
+                        
+                    }
                 }
-
-                if (letterIndividual.equals(other[j])) {
-                    System.out.print(other[j]); 
-                }
-
-                
-            }
+                break;
         }
+        
         System.out.println(""); 
     }
 
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);  
-        System.out.println("Enter cipher");
+        System.out.println("Enter cipher/plaintext");
         System.out.print("Cipher: ");
         String cipher = myObj.nextLine();  
 
         Scanner myObj2 = new Scanner(System.in);  
+        System.out.println("Encryption (e) or Decryption (d)");
+        System.out.print("eord: ");
+        String eord = myObj2.nextLine(); 
+
+        Scanner myObj3 = new Scanner(System.in);  
         System.out.println("Enter shift");
         System.out.print("Shift: ");
-        int shift = myObj2.nextInt();  
+        int shift = myObj3.nextInt();  
 
-        System.out.print("Decoded message: ");
-        affine decode = new affine(cipher, shift); 
+        System.out.print("Decoded/encoded message: ");
+        affine decode = new affine(cipher, eord, shift); 
  
         // test: Kfzb gly!
 
