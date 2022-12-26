@@ -13,7 +13,6 @@ public class vigenere {
     public vigenere(String msg, String key) {
         for (int i = 0; i < msg.length(); i++) {
             letterIndividual = msg.substring(i, i+1);
-            keyletter = key.substring(i, i+1);
 
             // for (int k = 0; k < letters.length; k++) {
 
@@ -103,12 +102,9 @@ public class vigenere {
                     break;
             }
 
-                
-            // }
-
             for (int j = 0; j < letters.length; j++) {
 
-                
+
                 // System.out.println(keyletter);
 
                 if (letterIndividual.equals(letters[j])) {
@@ -118,8 +114,11 @@ public class vigenere {
 
                 
             }
+            // }
         }
+            
         System.out.println(""); 
+        System.out.println(String.valueOf(key));
     }
 
 public static void main(String[] args) {
@@ -132,6 +131,9 @@ public static void main(String[] args) {
     System.out.println("Enter key");
     System.out.print("Key: ");
     String key = myObj2.nextLine(); 
+
+
+
 
     System.out.print("Decoded message: ");
     vigenere decode = new vigenere(cipher, key); 
