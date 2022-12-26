@@ -16,7 +16,7 @@ public class caesar {
     public caesar(String msg, String eord) {
 
         switch (eord) {
-            case "d":
+            case "e":
                 for (int i = 0; i < msg.length(); i++) {
                     letterIndividual = msg.substring(i, i+1);
         
@@ -39,7 +39,7 @@ public class caesar {
                     }
                 }
                 break;
-            case "e":
+            case "d":
                 for (int i = 0; i < msg.length(); i++) {
                     letterIndividual = msg.substring(i, i+1);
         
