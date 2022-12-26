@@ -10,6 +10,6 @@ Ciphers
 - Atbash (done)
 - Baconian (mostly done, needa fix spaces and incorporate 24 char)
 - Hill
-- Porta
-- Morse (in progress)
-- Binary
+- Porta (after fix vigenere)
+- Morse (after I fix baconian)
+- Binary (after I fix baconian)
