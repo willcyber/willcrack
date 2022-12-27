@@ -11,5 +11,5 @@ Ciphers
 - Baconian (mostly done, needa fix spaces and incorporate 24 char)
 - Hill (in progress)
 - Porta (after fix vigenere)
-- Morse (after I fix baconian)
+- Morse (done)
 - Binary (after I fix baconian)

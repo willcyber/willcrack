@@ -1,0 +1,85 @@
+<body>
+<label for="cipher">Input your cipher here:</label>
+<input type="text" id="cipher" name="cipher" placeholder="stuff">
+<button onclick="caesarCipher(cipher)">Convert!</button>
+
+<style>
+    body{
+        background: #0043b4;
+        position:relative;
+    }
+    label{
+        font-family:sans-serif;
+        color:black;
+        transform:scale(1.5);
+        position:relative;
+    }
+</style>
+
+<p for="caesarCipher">Decoded:</p>
+<p id="caesarCipher"></p>
+
+<script>
+    // var cipher = document.getElementById("cipher");
+    function caesarCipher(cipher){
+        
+
+        for (var i = 0; i < cipher.length; i++) {
+            let c = cipher[i].charCodeAt();
+            let sum = c+3;
+            if (c >= 65 && c <= 90) {
+                cipher += String.fromCharCode((c - 65 + 13) % 26 + 65);
+            } else if (c >= 97 && c <= 122) {
+                cipher += String.fromCharCode((c - 97 + 13) % 26 + 97);
+            } else {
+                cipher += cipher.charAt(i);
+            }
+            // return decoded;
+            
+        }
+
+        
+        
+
+        document.getElementById("caesarCipher").innerHTML = cipher.value;
+    }
+
+//     function rot13(cipher) {
+    
+//     var alphabets =['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'," ", "-", "_", ".", "&","?", "!", "@", "#", "/"];
+    
+//     var alphabets13 = ['N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M', " ", "-", "_", ".", "&","?", "!", "@", "#", "/"];
+    
+//     var resultStr = [];
+//     for(let i=0; i<cipher.length; i++){
+//         for(let j =0; j<alphabets.length; j++){
+//             if(cipher[i] === alphabets[j]){
+//             resultStr.push(alphabets13[j]);
+//             }
+//         }
+//     }
+//     var result =  resultStr.join("");
+//     document.getElementById("caesarCipher").innerHTML = result.value;
+//   };
+
+        
+    // function caesarCipher() {
+    //     var cipher = document.getElementById("cipher");
+    //     // document.getElementById("caesarCipher").innerHTML = cipher.value;
+    //     var decoded = "";
+    //     for (var i = 0; i < cipher.length; i++) {
+    //         var c = cipher[i].charCodeAt();
+    //         if (c >= 65 && c <= 90) {
+    //             decoded += String.fromCharCode((c - 65 + 13) % 26 + 65);
+    //         } else if (c >= 97 && c <= 122) {
+    //             decoded += String.fromCharCode((c - 97 + 13) % 26 + 97);
+    //         } else {
+    //             decoded += cipher.charAt(i);
+    //         }
+    //     }
+    //     document.getElementById("caesarCipher").innerHTML = decoded;
+    // }
+
+    
+    </script>
+</body>
