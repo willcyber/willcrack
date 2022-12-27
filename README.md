@@ -3,7 +3,7 @@
 
 ### In Javascript and Java
 
-Ciphers
+Java
 - Caesar (done)
 - Affine (done)
 - Vigenere (only works if key same length, needa fix)
@@ -13,3 +13,14 @@ Ciphers
 - Porta (after fix vigenere)
 - Morse (done)
 - Binary (after I fix baconian)
+
+JS
+- Caesar (done)
+- Affine 
+- Vigenere 
+- Atbash 
+- Baconian 
+- Hill 
+- Porta 
+- Morse 
+- Binary 
