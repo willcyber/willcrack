@@ -1,9 +1,12 @@
-# willcrack
-## A Cryptography Cracker
+![image](pics/Wlogo.PNG)
 
-### In Javascript and Java
+  <p align="center">A cryptography tool on JS and Java.</p>
+    <p align="center">
 
-Java
+</p>
+
+## Description
+Willcrack supports a variety of ciphers
 - Caesar (done)
 - Affine (done)
 - Vigenere (only works if key same length, needa fix)
@@ -14,13 +17,9 @@ Java
 - Morse (done)
 - Binary (after I fix baconian)
 
-JS
-- Caesar (done)
-- Affine 
-- Vigenere 
-- Atbash 
-- Baconian 
-- Hill 
-- Porta 
-- Morse 
-- Binary 
+## Getting Started
+- Just download and run
+- Open the HTMLs if you would like to have a user interface
+
+## Contact
+wutwilliam@gmail.com
