@@ -16,6 +16,7 @@ Willcrack supports a variety of ciphers
 - Porta (after fix vigenere)
 - Morse (done)
 - Binary (after I fix baconian)
+- Base64
 
 ## Getting Started
 - Just download and run
