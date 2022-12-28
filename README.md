@@ -9,13 +9,13 @@
 Willcrack supports a variety of ciphers
 - Caesar (done)
 - Affine (done)
-- Vigenere (only works if key same length, needa fix)
+- Vigenere (done, maybe add encryption)
 - Atbash (done)
-- Baconian (mostly done, needa fix spaces and incorporate 24 char)
+- Baconian (done)
 - Hill (in progress)
-- Porta (after fix vigenere)
+- Porta (in progress)
 - Morse (done)
-- Binary (after I fix baconian)
+- Binary (done)
 - Base64
 
 ## Getting Started
