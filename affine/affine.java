@@ -1,4 +1,4 @@
-package willcrack;
+package willcrack.affine;
 import java.util.Scanner; 
 import java.lang.Math;
 
