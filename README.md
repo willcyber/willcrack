@@ -1,6 +1,6 @@
-![image](pics/Wlogo.PNG)
+![image](pics/willcrack.PNG)
 
-  <p align="center">A cryptography tool on JS and Java.</p>
+  <p align="center">A cryptography tool in JS and Java.</p>
     <p align="center">
 
 </p>
