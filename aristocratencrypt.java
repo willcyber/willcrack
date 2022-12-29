@@ -38,16 +38,14 @@ public class aristocratencrypt {
 
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);  
-        System.out.println("Enter cipher/plaintext");
+        System.out.println("Enter plaintext");
         System.out.print("Original: ");
         String cipher = myObj.nextLine();  
         // System.out.println("Cipher: " + cipher);
 
 
-        System.out.print("Decoded/Encoded message: ");
+        System.out.print("Encoded message: ");
         aristocratencrypt decode = new aristocratencrypt(cipher); 
- 
-        // test: Kfzb gly!
 
     }
 }
