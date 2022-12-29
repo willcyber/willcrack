@@ -1,4 +1,4 @@
-package willcrack;
+package willcrack.caesar;
 import java.util.Scanner; 
 import java.lang.Math;
 

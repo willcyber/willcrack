@@ -17,7 +17,7 @@ Willcrack supports a variety of ciphers
 - Morse (done)
 - Binary (done)
 - Base64
-- Aristocrat Encryption
+- Aristocrat Encryption (done)
 
 ## Getting Started
 - Just download and run
