@@ -17,9 +17,9 @@ public class hillencode {
 
     public hillencode(int a, int b, int c, int d, String plain) {
 
-        for (int i = 0; i < plain.length(); i++) {
-            letterIndividual = plain.substring(2*i, 2*i+1);
-            letterIndividual2 = plain.substring(2*i+1, 2*i+2);
+        for (int i = 0; i < plain.length(); i+=2) {
+            letterIndividual = plain.substring(i, i+1);
+            letterIndividual2 = plain.substring(i+1, i+2);
 
             for (int j = 0; j < letters.length; j++) {
                 
@@ -32,9 +32,11 @@ public class hillencode {
                     t = j;
                 }
 
-                System.out.print(letters[a*v+b*t]);
+                
                 
             }
+            System.out.print(letters[(a*v+b*t) % 26]);
+            System.out.print(letters[(c*v+d*t) % 26]);
         }
         
         System.out.println(""); 

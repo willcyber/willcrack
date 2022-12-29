@@ -13,7 +13,7 @@ Willcrack supports a variety of ciphers
 - Atbash (done)
 - Baconian (done)
 - Hill (in progress)
-- Porta (in progress)
+- Porta (done)
 - Morse (done)
 - Binary (done)
 - Base64
