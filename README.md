@@ -10,7 +10,7 @@ Willcrack supports a variety of ciphers
 - Vigenere (done, maybe add encryption)
 - Atbash (done)
 - Baconian (done)
-- Hill (in progress)
+- Hill (encode done, decode in progress)
 - Porta (done)
 - Morse (done)
 - Binary (done)
