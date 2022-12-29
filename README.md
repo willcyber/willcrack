@@ -22,5 +22,8 @@ Willcrack supports a variety of ciphers
 - Just download and run
 - Open the HTMLs if you would like to have a user interface
 
+## License
+- MIT
+
 ## Contact
 wutwilliam@gmail.com
