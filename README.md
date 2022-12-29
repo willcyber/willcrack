@@ -1,9 +1,7 @@
 <p style="text-align:center;"> <img src="pics/willcrack.PNG"> </p>
 
-  <p align="center">A cryptography tool in JS and Java.</p>
-    <p align="center">
+  <p> A cryptography tool in JS and Java.</p>
 
-</p>
 
 ## Description
 Willcrack supports a variety of ciphers
