@@ -1,4 +1,4 @@
-<p style="text-align:center;"> <img src="pics/willcrack.PNG"> </p>
+<p style="text-align:center;"> <img src="data/willcrack.PNG"> </p>
 
   <p> A cryptography tool in JS and Java.</p>
 

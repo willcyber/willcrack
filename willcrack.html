@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Willcrack</title>
+	<link rel="stylesheet" type="text/css" href="data/style.css">
+</head>
 <body>
-
-<h1>Welcome to Willcrack!</h1>
-
-<p>This tool will hopefully help you on your ctf journey</p>
-
-<label for="cipher">Input your cipher here:</label>
-<input type="text" id="cipher" name="cipher" placeholder="stuff">
-<button onclick="convert()">Convert!</button>
-<p id="convert"></p>
-
-
-
-
-<script>
-function convert() {
-    var cipher = document.getElementById("cipher");
-    document.getElementById("convert").innerHTML = cipher.value;
-}
-
-</script>
-
+	<h1>Willcrack</h1>
+	<form>
+		<label for="ciphertype">Cipher Type:</label><br>
+		<select id="ciphertype">
+			<option value="caesar">Caesar</option>
+			<option value="atbash">Atbash</option>
+			<option value="affine">Affine</option>
+		</select><br>
+		<label for="eord">Encrypt or Decrypt:</label><br>
+		<select id="eord">
+			<option value="encrypt">Encrypt</option>
+			<option value="decrypt">Decrypt</option>
+		</select><br><br>
+		<textarea id="input-text"></textarea><br>
+		<button type="button" onclick="translate()">Translate</button>
+	</form> 
+	<br>
+	<textarea id="output-text"></textarea>
+    
+    <script src="willcrack.js"></script>
 </body>
+
 </html>
+
+

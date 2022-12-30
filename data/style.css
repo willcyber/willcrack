@@ -1,0 +1,49 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	color: #333;
+	margin-bottom: 30px;
+}
+
+form {
+	display: inline-block;
+	text-align: left;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+select {
+	width: 150px;
+	height: 35px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+textarea {
+	width: 500px;
+	height: 200px;
+	font-size: 16px;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+button {
+	width: 100px;
+	height: 35px;
+	font-size: 16px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.8;
+}
