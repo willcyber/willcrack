@@ -19,15 +19,17 @@ public class hilldecode {
 
     public hilldecode(int a, int b, int c, int d, String plain) {
 
+        s = a;
+        a = d;
+        d = s;
+        b = -b;
+        c = -c;
+        det = ((a*c)-(b*d)) % 26;
+
         for (int i = 0; i < plain.length(); i+=2) {
             letterIndividual = plain.substring(i, i+1);
             letterIndividual2 = plain.substring(i+1, i+2);
-            s = a;
-            a = d;
-            d = s;
-            b = -b;
-            c = -c;
-            det = ((a*c)-(b*d)) % 26;
+            
             int y = 0;
             int x = 1;
 

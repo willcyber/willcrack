@@ -7,7 +7,7 @@ function translate() {
 	var inputText = document.getElementById("input-text").value;
 
 	// Translate input text to output language
-	var outputText = "";
+	var outputText = "test";
 	if (ciphertype == "caesar" && eord == "decrypt") {
         for (var i = 0; i < inputText.length; i++) {
             // Get the ASCII code of the current character
@@ -17,7 +17,8 @@ function translate() {
             // If the character is a letter (uppercase or lowercase), wrap around if necessary
             if (c >= 65 && c <= 90) {  // uppercase letter
                 c = (c - 65 + 3) % 26 + 65;
-            } else if (c >= 97 && c <= 122) {  // lowercase letter
+            } 
+            else if (c >= 97 && c <= 122) {  // lowercase letter
                 c = (c - 97 + 3) % 26 + 97;
             }
     
